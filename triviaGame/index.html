@@ -21,20 +21,37 @@
         <div>Harry Potter Trivia Game</div>
     </header>
     <div class="container">
-        <button id="button">Start</button>
-
-        <div id="question"></div>
-        <div id="answer_list"></div>
-
-        <!-- answer part -->
-        <div id="message"></div>
-
-        <!-- score -->
-        <div id="correct_answer"></div>
-        <div id="wrong_answer"></div>
-        <button id="start_over">!!Start over!!</button>
+        <div id="start_section" style="display: none">
+            <button id="start">Start</button>
+        </div>
+        <div id="question_section" style="display: none">
+            <div id="remaining_time"></div>
+            <div id="question"></div>
+            <button id="answer_0"></button><br/>
+            <button id="answer_1"></button><br/>
+            <button id="answer_2"></button><br/>
+            <button id="answer_3"></button><br/>
+        </div>
+    
+        <div id="correct_answer_section" style="display: none">
+            <div>Correct</div>
+        </div>
+        
+        <div id="incorrect_answer_section" style="display: none">
+            <div>Nope</div>
+            <div id="correct_answer_incorrect"></div>
+        </div>
+        
+        <div id="timeout_section" style="display: none">
+            <div>Out of time!</div>
+            <div id="correct_answer_timeout"></div>
+        </div>
+        
+        <div id="end_section" style="display: none">
+            <div id="result"></div>
+            <button id="start_over">Start over</button>
+        </div>
     </div>
-
+    <script>startGame();</script>
 </body>
-
 </html>
